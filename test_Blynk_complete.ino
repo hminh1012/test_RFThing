@@ -5,9 +5,9 @@
  */
 
 // --- Blynk Defines ---
-#define BLYNK_TEMPLATE_ID "TMPL6lpLMLUzT"
-#define BLYNK_TEMPLATE_NAME "RFthing"
-#define BLYNK_AUTH_TOKEN "P7rRuFHui5Dt0rTZZCeit-tfOhU152h3"
+#define BLYNK_TEMPLATE_ID           "TMPxxxxxx"
+#define BLYNK_TEMPLATE_NAME         "Device"
+#define BLYNK_AUTH_TOKEN            "YourAuthToken"
 #define BLYNK_PRINT Serial
 #define APP_DEBUG
 
@@ -29,8 +29,8 @@
 #define VIRTUAL_PIN_FALL_DETECT V11
 
 // --- WiFi Credentials ---
-char ssid[] = "Bubuchacha";
-char pass[] = "umbalaxibua";
+char ssid[] = "YourNetworkName";
+char pass[] = "YourPassword";
 
 // --- Global Objects & Variables ---
 BlynkTimer timer;
