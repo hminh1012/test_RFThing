@@ -1,4 +1,4 @@
-<img width="1287" height="725" alt="image" src="https://github.com/user-attachments/assets/57c24ff4-8b55-4df0-8543-341e82b0b038" />
+
 
 # Hướng dẫn sử dụng RFThings
 
