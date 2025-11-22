@@ -1,16 +1,10 @@
-/*
- * FIXED VERSION: Correct order of Includes vs Defines
- * * 1. BLYNK DEFINES (MUST BE FIRST)
- * 2. LIBRARIES
- * 3. SENSOR & EMAIL LOGIC
- */
 
 // -------------------------------------------------------------------------
 // 1. BLYNK CONFIGURATION (MUST BE THE VERY FIRST LINES)
 // -------------------------------------------------------------------------
-#define BLYNK_TEMPLATE_ID "TMPL6lpLMLUzT"
-#define BLYNK_TEMPLATE_NAME "RFthing"
-#define BLYNK_AUTH_TOKEN "P7rRuFHui5Dt0rTZZCeit-tfOhU152h3"
+#define BLYNK_TEMPLATE_ID           "TMPxxxxxx"
+#define BLYNK_TEMPLATE_NAME         "Device"
+#define BLYNK_AUTH_TOKEN            "YourAuthToken"
 #define BLYNK_PRINT Serial
 
 // -------------------------------------------------------------------------
@@ -18,7 +12,7 @@
 // -------------------------------------------------------------------------
 #include <WiFi.h>
 #include <WiFiClient.h>
-#include <BlynkSimpleEsp32.h> // Now safe to include because ID is defined above
+#include <BlynkSimpleEsp32.h> 
 #include <Wire.h>
 #include "Adafruit_SHTC3.h"
 #include <Kionix_KX023.h>
@@ -29,13 +23,17 @@
 // -------------------------------------------------------------------------
 #define SMTP_HOST "smtp.gmail.com"
 #define SMTP_PORT 465
-#define AUTHOR_EMAIL "pidrowsiness@gmail.com"
-#define AUTHOR_PASSWORD "fjxl mvzd kzmu piig" 
-#define RECIPIENT_EMAIL "tranhoangminh675@gmail.com"
+
+/* The sign in credentials */
+#define AUTHOR_EMAIL "YOUR_EMAIL@XXXX.com"
+#define AUTHOR_PASSWORD "YOUR_EMAIL_APP_PASS"
+
+/* Recipient's email*/
+#define RECIPIENT_EMAIL "RECIPIENTE_EMAIL@XXXX.com"
 
 // --- WiFi Credentials ---
-char ssid[] = "Bubuchacha";
-char pass[] = "umbalaxibua";
+char ssid[] = "YourNetworkName";
+char pass[] = "YourPassword";
 
 // --- Pin Definitions ---
 #define LED 4       
